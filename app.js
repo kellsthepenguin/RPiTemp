@@ -1,6 +1,6 @@
 const { exec } = require('child_process') // importing child_process.exec only (saving memory)
 const mail = require('nodemailer') // importing nodemailer
-const file = require('file/smtpconfig.jsonc')
+const file = require('file/smtpconfig.json')
 
 function lol () {
   exec('/opt/vc/bin/vcgencmd measure_temp| sed "s/[^0-9.]//g"', (err, stdout) => { // getting raspberry pi's temputure
